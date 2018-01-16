@@ -9,6 +9,7 @@ class Permission extends Model
 {
     use HasRelationships;
 
+    protected $table = 'voyager_permissions';
     protected $guarded = [];
 
     public function roles()

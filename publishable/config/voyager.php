@@ -91,7 +91,7 @@ return [
 
     'database' => [
         'tables' => [
-            'hidden' => ['migrations', 'data_rows', 'data_types', 'menu_items', 'password_resets', 'permission_role', 'settings'],
+            'hidden' => ['migrations', 'voyager_data_rows', 'voyager_data_types', 'voyager_menu_items', 'password_resets', 'voyager_permission_role', 'voyager_settings'],
         ],
     ],
 

@@ -10,6 +10,7 @@ class Role extends Model
 {
     use HasRelationships;
 
+    protected $table = 'voyager_roles';
     protected $guarded = [];
 
     public function users()
