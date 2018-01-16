@@ -15,11 +15,11 @@ class Role extends Model
 
     public function users()
     {
-        return $this->belongsToMany(Voyager::modelClass('User'), 'user_roles');
+        return $this->belongsToMany(Voyager::modelClass('User'), 'voyager_user_roles');
     }
 
     public function permissions()
     {
-        return $this->belongsToMany(Voyager::modelClass('Permission'));
+        return $this->belongsToMany(Voyager::modelClass('Permission'), 'voyager_permission_role');
     }
 }
