@@ -144,7 +144,7 @@ class TranslationsTableSeeder extends Seeder
      */
     private function menusTranslations()
     {
-        $_tpl = ['menu_items', 'title'];
+        $_tpl = ['voyager_menu_items', 'voyager_title'];
         $_item = $this->findMenuItem('Dashboard');
         if ($_item->exists) {
             $this->trans('pt', $this->arr($_tpl, $_item->id), 'Painel de Controle');
